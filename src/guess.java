@@ -7,14 +7,13 @@ public class guess
         Scanner a2= new Scanner(System.in);
         int min=1;
         int max=100;
-        int range=(max-min)+1;
-        int random=(int)(Math.random()*range+min);
+        
         System.out.println("What is your guess?\nType Either\n higher    lower     correct");
         String output1=a2.nextLine();
         output1=output1.toLowerCase();
         if(output1=="higher")
         {
-            
+
         }
         if(output1=="lower")
 
