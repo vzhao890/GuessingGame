@@ -7,15 +7,42 @@ public class guess
         Scanner a2= new Scanner(System.in);
         int min=1;
         int max=100;
-        
-        System.out.println("What is your guess?\nType Either\n higher    lower     correct");
+        int compG=(max/2);
+        System.out.println("My guess is 50\nType Either\n higher  or  lower  or   correct");
         String output1=a2.nextLine();
         output1=output1.toLowerCase();
-        if(output1=="higher")
+        Scanner b2= new Scanner(System.in);
+        while(!output1.equals("correct"))
         {
+            String return2="";
+            if(output1.equals("higher"))
+            {
+
+                compG=compG+(compG/2);
+                System.out.println("Is your number "+compG);
+                return2=b2.nextLine();
+                b2.reset();
+            }
+            if(output1.equals("lower"))
+            {
+                compG=compG-(compG/2);
+                System.out.println("Is your number "+compG);
+                return2=b2.nextLine();
+                b2.reset();
+            }
+            if(output1.equals("correct"))
+            {
+                System.out.println("Your Number is "+compG);
+            }
+            else{
+                System.out.println("Error");
+            }
+            a2.close();
+            b2.close();
+
 
         }
-        if(output1=="lower")
+
 
 
 
