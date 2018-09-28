@@ -2,47 +2,42 @@ import java.util.Scanner;
 //Vincent Zhao Period 2-3 9-26-18
 public class guess
 {
-    public static void main(String[] args)
-    {
-        int min=1;
-        int max=0;
-        int compG=0;
-        int start=0;
-        Scanner a2= new Scanner(System.in);
+    public static void main(String[] args) {
+        int min = 1;
+        int max = 0;
+        int compG = 0;
+        int start = 0;
+        Scanner a2 = new Scanner(System.in);
         System.out.println("What is your name?");
-        String name=a2.nextLine();
-        System.out.println("Welcome "+name);
-        System.out.println("Which Game would you like to play, "+name+"?");
-        System.out.println("Type 1 if you want to play the game that guesses your number");
+        String name = a2.nextLine();
+        System.out.println("Welcome " + name);
+        System.out.println("Which Game would you like to play, " + name + "?");
+        System.out.println("Type 1 if you want to play the game that the computer guesses your number");
         System.out.println("Type 2 if you want to play the game that you guess the computer's number");
-        String choice=a2.nextLine();
-        int b=Integer.parseInt(choice);
+        String choice = a2.nextLine();
+        int b = Integer.parseInt(choice);
         System.out.println("Choose Your Difficulty");
         System.out.println("Choose from numbers 1 to 4");
         System.out.println("1 is the easiest-4 being the hardest");
-        String dif=a2.nextLine();
-        int a=Integer.parseInt(dif);
-        if(a==1)
-        {
-            max=10;
-            System.out.println("You have chosen Chicken Mode.\nGuess From (1-10)");
+        String dif = a2.nextLine();
+        int a = Integer.parseInt(dif);
+        if (a == 1) {
+                max = 10;
+                System.out.println("You have chosen Chicken Mode.\nGuess From (1-10)");
+        } else if (a == 2) {
+                max = 100;
+                System.out.println("You have chosen Easy Mode.\nGuess From (1-100)");
+        } else if (a == 3) {
+                max = 1000;
+                System.out.println("You have chosen Hard Mode.\nGuess From (1-1,000)");
+        } else if (a == 4) {
+                max = 10000;
+                System.out.println("You have chosen Eggtreme Mode.\nGuess From (1-10,000)");
+        } else {
+            System.out.println("You didn't choose a correct number!!");
+            System.out.println("You get difficulty 4 ");
+            max = 10000;
         }
-        if(a==2)
-        {
-            max=100;
-            System.out.println("You have chosen Easy Mode.\nGuess From (1-100)");
-        }
-        if(a==3)
-        {
-            max=1000;
-            System.out.println("You have chosen Hard Mode.\nGuess From (1-1,000)");
-        }
-        if(a==4)
-        {
-            max=10000;
-            System.out.println("You have chosen Eggtreme Mode.\nGuess From (1-10,000)");
-        }
-
 
 
         if(b==2) {
@@ -96,7 +91,5 @@ public class guess
             }
             a2.close();
         }
-
-
     }
 }
