@@ -14,37 +14,30 @@ public class guess
 
         while(!output1.equals("correct"))
         {
-            String return2="";
+
             if(output1.equals("higher"))
             {
 
-                compG=compG+(compG/2);
+                compG=(int)(Math.random()*101)+0;
                 System.out.println("Is your number "+compG);
-                return2=a2.nextLine();
+                output1=a2.nextLine();
 
             }
             if(output1.equals("lower"))
             {
-                compG=
+                compG=(int)(Math.random()*101)+1;
                 System.out.println("Is your number "+compG);
-                return2=a2.nextLine();
+                output1=a2.nextLine();
 
             }
-
-            else{
-                System.out.println("Error");
-            }
-            if(output1.equals("correct"))
-            {
-                System.out.println("Your Number is "+compG);
-            }
-            a2.close();
-
-
 
         }
 
-
+        if(output1.equals("correct"))
+        {
+            System.out.println("I win!");
+        }
+        a2.close();
 
 
        /*
