@@ -40,7 +40,7 @@ public class guess
         if(a==4)
         {
             max=10000;
-            System.out.println("You have chosen WinnerWinnerChickenDinner Mode.\nGuess From (1-10,000)");
+            System.out.println("You have chosen Eggtreme Mode.\nGuess From (1-10,000)");
         }
 
 
