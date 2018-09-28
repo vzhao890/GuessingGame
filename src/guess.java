@@ -63,13 +63,13 @@ public class guess
             a2.close();
         }
 
-
+        int max1=max+1;
         if (b == 1)
         {
 
 
-            System.out.println("My guess is 50");
-            System.out.println("Choose From One of These To Type, " + name);
+            System.out.println("Is your number 1?");
+            System.out.println("Choose From One of These Words Below To Respond " + name);
             System.out.println("higher or  lower  or   correct");
             String output1 = a2.nextLine();
             output1 = output1.toLowerCase();
@@ -77,14 +77,14 @@ public class guess
             while (!output1.equals("correct")) {
 
                 if (output1.equals("higher")) {
-                    compG = (int) (Math.random() * 101) + 0;
-                    System.out.println("Is your number, " + name + "?" + compG);
+                    compG = (int) (Math.random() * max1) + 0;
+                    System.out.println("Is your number, " +compG+"? "+ name + "?");
                     output1 = a2.nextLine();
 
                 }
                 if (output1.equals("lower")) {
-                    compG = (int) (Math.random() * 101) + 0;
-                    System.out.println("Is your number, " + name + "?" + compG);
+                    compG = (int) (Math.random() * max1) + 0;
+                    System.out.println("Is your number, "+compG +"? "+ name + "?");
                     output1 = a2.nextLine();
 
                 }
