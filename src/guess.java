@@ -12,7 +12,7 @@ public class guess
         System.out.println("What is your name?");
         String name=a2.nextLine();
         System.out.println("Welcome "+name);
-        System.out.println("Which Game would you like to play");
+        System.out.println("Which Game would you like to play?");
         System.out.println("Type 1 if you want to play the game that guesses your number");
         System.out.println("Type 2 if you want to play the game that you guess the computer's number");
         String choice=a2.nextLine();
