@@ -25,7 +25,7 @@ public class guess
             }
             if(output1.equals("lower"))
             {
-                compG=(int)(Math.random()*101)+1;
+                compG=(int)(Math.random()*101)+0;
                 System.out.println("Is your number "+compG);
                 output1=a2.nextLine();
 
