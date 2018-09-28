@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//Vincent Zhao Period 2-3 9-26-18
 public class guess
 {
     public static void main(String[] args)
